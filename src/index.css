@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #adf0d4;
+  --secondary-color: #1fd8a4;
+  --tertiary-color: #0d1512;
+  --quaternary-color: #112d26;
+  --quinary-color: white;
+}
+
+* {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--quinary-color);
+    color: var(--tertiary-color);
+}
+
+section:nth-child(2n + 1) {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+}
