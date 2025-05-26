@@ -1,6 +1,7 @@
 import Header from "./components/Header"
-import './app.css'
 import AboutMe from "./components/AboutMe"
+import Projects from "./components/Projects"
+import './app.css'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <main>
           <Header />
           <AboutMe />
+          <Projects />
         </main>
       </div>
     </>

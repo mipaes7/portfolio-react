@@ -6,18 +6,15 @@ nav {
   gap: 36px;
   background: #0d1512;
   padding: 12px 24px;
-  /* width: max-content; */
   border-radius: 3rem;
   position: fixed;
-  /* bottom: 2rem; */
-  left: 2rem;
+  left: 2.2rem;
 }
 
 .nav-bottom {
   display: flex;
   flex-direction: row;
   bottom: 2rem;
-  left: auto;
 }
 
 .nav-item {
@@ -68,6 +65,10 @@ nav {
     display: flex;
     flex-direction: row;
     bottom: 2rem;
+    left: auto;
+  }
+
+  .nav-bottom {
     left: auto;
   }
 
