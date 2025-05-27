@@ -1,81 +1,87 @@
 .aboutme-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .aboutme-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .aboutme-generals {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 90%;
 }
 
 .aboutme-generals-text {
-    border: 1px solid #0d1512;
-    padding: 8px;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.25rem;
+  border: 1px solid #0d1512;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+  border-radius: 8px;
+  background: var(--secondary-color);
 }
 
-.aboutme-experience, .aboutme-education {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
+.aboutme-experience,
+.aboutme-education {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  width: 90%;
+  gap: 10px;
 }
 
-.aboutme-experience h2, .aboutme-education h2 {
-    width: 90%;
+.aboutme-experience h2,
+.aboutme-education h2 {
+  width: 90%;
 }
 
 .experience-card {
-    display: flex;
-    flex-direction: column;
-    padding: 18px;
-    gap: 28px;
-    background-color: #0d1512;
-    color: #1fd8a4;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  gap: 28px;
+  background-color: #0d1512;
+  color: #1fd8a4;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .experience-card-header {
-    width: max-content;
+  width: max-content;
 }
 
 .experience-card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    color: #adf0d4;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #adf0d4;
+  width: auto;
 }
 
 .experience-card-body-title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: #1fd8a4;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #1fd8a4;
 }
 
 .experience-card-body-title a {
-    text-decoration: none;
-    color: #1fd8a4;
-    margin-left: 4px;
+  text-decoration: none;
+  color: #1fd8a4;
+  margin-left: 4px;
 }
 
 .company-link-wrapper {
@@ -100,87 +106,94 @@
 }
 
 .experience-card-body-stack {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 14px;
-    list-style: none;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  list-style: none;
+  width: 100%;
 }
 
 .experience-card-body-stack li {
-    background: #adf0d4;
-    color: #0d1512;
-    padding: 2px 8px;
-    border-radius: 2rem;
-    font-size: 1.2rem;
+  background: #adf0d4;
+  color: #0d1512;
+  padding: 2px 8px;
+  border-radius: 2rem;
+  font-size: 1.2rem;
 }
 
 .education-card-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
 }
 
 .education-card {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2px;
-    padding: 20px;
-    background: #0d1512;
-    color: #1fd8a4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2px;
+  padding: 20px;
+  background: #0d1512;
+  color: #1fd8a4;
+  border-radius: 8px;
 }
 
 .education-card-icon {
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .education-card-body {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 
 .bootcamp-icon {
-    background-color: var(--primary-color);
-    width: 80px;
-    margin-left: 6px;
-    border-radius: 3px
+  background-color: var(--primary-color);
+  width: 80px;
+  margin-left: 6px;
+  border-radius: 3px;
 }
 
 @media (min-width: 720px) {
+  .aboutme-info {
+    justify-content: space-around;
+    height: 700px;
+  }
 
-    .aboutme-info {
-        justify-content: space-around;
-        height: 700px;
-    }
+  .aboutme-header-text h1 {
+    font-size: 5rem;
+  }
 
-    .aboutme-header-text h1 {
-        font-size: 5rem;
-    }
+  .aboutme-generals,
+  .education-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
-    .aboutme-info {
-        flex-direction: column;
-    }
+  .experience-card {
+    flex-direction: row;
+    width: fit-content;
+  }
+  
+}
 
-    .aboutme-generals, .education-card-list {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+@media (max-width: 480px) {
+  .education-card-body {
+    font-size: 0.95rem;
+  }
 
-    .aboutme-experience {
-        width: 60%;
-    }
+  .experience-card {
+    padding: 12px;
+  }
 
-    .experience-card {
-        flex-direction: row;
-        width: 90%;
-        /* align-self: flex-start; */
-        /* margin-left: 70px; */
-    }
+  .experience-card-body-stack li {
+    font-size: 1rem;
+  }
 }

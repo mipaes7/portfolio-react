@@ -14,7 +14,7 @@
     scroll-behavior: smooth;
 }
 
-section {
+section[id] {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
