@@ -11,7 +11,7 @@ const Socials = () => {
       <div className="home-buttons-container">
         <button className="contact-button"><a href="#contact">Contact</a></button>
         <button className="cv-button">
-          <a href="/CV_Miguel_Pardal_Esparis%20-%20EN.pdf" download="CV_Miguel_Pardal_Esparis_EN.pdf">
+          <a href="/portfolio-react/CV_Miguel_Pardal_Esparis%20-%20EN.pdf" download="CV_Miguel_Pardal_Esparis_EN.pdf">
             Download CV
           </a>
         </button>
