@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 120px;
 }
 
 .aboutme-info {
@@ -13,12 +14,17 @@
   gap: 24px;
 }
 
-.aboutme-generals {
+.aboutme-generals,
+.aboutme-experience,
+.aboutme-education {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   gap: 18px;
   width: 90%;
 }
+
 
 .aboutme-generals-text {
   border: 1px solid #0d1512;
@@ -30,24 +36,25 @@
   background: var(--secondary-color);
 }
 
-.aboutme-experience,
-.aboutme-education {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+.aboutme-experience h2,
+.aboutme-education h2,
+.aboutme-generals h2 {
   width: 90%;
-  gap: 10px;
 }
 
-.aboutme-experience h2,
-.aboutme-education h2 {
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
   width: 90%;
 }
 
 .experience-card {
   display: flex;
   flex-direction: column;
+  /* align-self: flex-start; */
+  margin-left: 0;
   padding: 18px;
   gap: 28px;
   background-color: #0d1512;
@@ -123,7 +130,8 @@
   font-size: 1.2rem;
 }
 
-.education-card-list {
+.education-card-list,
+.aboutme-generals div {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -164,14 +172,22 @@
 @media (min-width: 720px) {
   .aboutme-info {
     justify-content: space-around;
+    /* align-items: center; */
     height: 700px;
+    /* margin-left: 80px; */
+  }
+
+  .aboutme-education,
+  .aboutme-experience,
+  .aboutme-generals {
+    margin: 0 auto;
   }
 
   .aboutme-header-text h1 {
     font-size: 5rem;
   }
 
-  .aboutme-generals,
+  .aboutme-generals div,
   .education-card-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

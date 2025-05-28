@@ -8,6 +8,10 @@ nav {
   padding: 12px 24px;
   border-radius: 3rem;
   position: fixed;
+  left: auto;
+}
+
+.nav-home {
   left: 2.2rem;
 }
 
@@ -15,6 +19,13 @@ nav {
   display: flex;
   flex-direction: row;
   bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+}
+
+.nav-bottom:hover {
+  opacity: 1;
 }
 
 .nav-item {
@@ -65,11 +76,11 @@ nav {
     display: flex;
     flex-direction: row;
     bottom: 2rem;
-    left: auto;
   }
 
-  .nav-bottom {
-    left: auto;
+  .nav-home {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-items {

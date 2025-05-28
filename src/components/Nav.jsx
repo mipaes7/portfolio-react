@@ -42,7 +42,7 @@ const Nav = () => {
     }, [])
 
     return (
-        <nav className={activeSection === '#home' ? '' : 'nav-bottom'}>
+        <nav className={activeSection === '#home' ? 'nav-home' : 'nav-bottom'}>
             <a
                 onClick={() => handleChangeSection('#home')}
                 href='#home'
