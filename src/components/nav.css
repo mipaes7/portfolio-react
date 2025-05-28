@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 36px;
@@ -8,11 +8,13 @@ nav {
   padding: 12px 24px;
   border-radius: 3rem;
   position: fixed;
-  left: auto;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-home {
-  left: 2.2rem;
+  /* left: 2.2rem; */
 }
 
 .nav-bottom {

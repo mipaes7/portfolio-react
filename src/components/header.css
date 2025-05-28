@@ -11,7 +11,7 @@
 
 .header-text {
   font-size: 4rem;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   text-orientation: upright;
   letter-spacing: -10px;
   font-weight: 800;
