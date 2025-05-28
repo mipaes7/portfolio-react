@@ -1,10 +1,11 @@
 import { FolderGit2, User, House, Mail } from 'lucide-react'
 import './nav.css'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const Nav = () => {
 
     const [activeSection, setActiveSection] = useState('#home')
+    const timeoutRef = useRef(null)
 
     const handleChangeSection = (section) => {
         setActiveSection(section)
@@ -16,15 +17,31 @@ const Nav = () => {
 
     useEffect(() => {
         const sections = document.querySelectorAll('section[id], header[id]')
+
+        const visibilityThresholds = {
+            '#home': 0.75,
+            '#aboutme': 0.2,
+            '#projects': 0.3,
+            '#contact': 0.3,
+        }
+
         const observer = new IntersectionObserver(
             (entries) => {
                 const visibleSections = entries
-                    .filter(entry => entry.isIntersecting)
+                    .filter(entry => {
+                        const id = `#${entry.target.id}`
+                        const threshold = visibilityThresholds[id] || 0.3
+                        return entry.intersectionRatio >= threshold
+                    })
                     .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
 
                 if (visibleSections.length > 0) {
-                    const topSection = visibleSections[0]
-                    setActiveSection(`#${topSection.target.id}`)
+                    const topSectionId = `#${visibleSections[0].target.id}`
+
+                    clearTimeout(timeoutRef.current)
+                    timeoutRef.current = setTimeout(() => {
+                        setActiveSection(topSectionId)
+                    }, 75)
                 }
             },
             {

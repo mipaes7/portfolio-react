@@ -1,5 +1,5 @@
 import SectionHeader from './SectionHeader'
-import exeimg from '../../../assets/exe.png'
+import exeimg from '../assets/exe.png'
 import './projects.css'
 import Project from './Project'
 
