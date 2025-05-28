@@ -15,7 +15,7 @@
 }
 
 section[id] {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,4 +27,5 @@ section[id] {
 section:nth-child(2n + 1) {
     background: var(--tertiary-color);
     color: var(--secondary-color);
+    /* min-height: 100dvh; */
 }
