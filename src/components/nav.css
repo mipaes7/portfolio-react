@@ -13,10 +13,6 @@ nav {
   transform: translateX(-50%);
 }
 
-.nav-home {
-  /* left: 2.2rem; */
-}
-
 .nav-bottom {
   display: flex;
   flex-direction: row;
